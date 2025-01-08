@@ -1,0 +1,239 @@
+/肥減產品網站
+    ├── index.html         # 主頁
+    ├── styles.css         # 網站樣式
+    ├── script.js          # JavaScript交互
+    └── images/
+        ├── product1.jpg   # 產品圖片1
+        └── product2.jpg   # 產品圖片2
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>減肥產品網站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>健康減脂</h1>
+            <p>讓你輕鬆達成目標</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#products">產品</a></li>
+                <li><a href="#plans">個性化計劃</a></li>
+                <li><a href="#blog">博客</a></li>
+                <li><a href="#contact">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>減肥，從這裡開始！</h2>
+        <p>選擇適合你的產品，開始健康減脂之旅</p>
+        <a href="#products" class="cta-button">查看產品</a>
+    </section>
+
+    <section id="products">
+        <h2>熱門產品</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="產品1">
+                <h3>燃脂奶昔</h3>
+                <p>快速燃燒脂肪，幫助控制食慾。</p>
+                <button class="buy-button">立即購買</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="產品2">
+                <h3>高纖維餐</h3>
+                <p>滿足飽腹感，低熱量高營養。</p>
+                <button class="buy-button">立即購買</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2>個性化減肥計劃</h2>
+        <p>根據你的需求，我們提供量身定制的減肥計劃。請填寫以下問卷，獲取專屬方案。</p>
+        <button onclick="window.location.href='#'">開始計劃</button>
+    </section>
+
+    <section id="blog">
+        <h2>減肥博客</h2>
+        <p>最新的健康與減肥資訊，助你更快達到目標！</p>
+        <a href="#">閱讀更多</a>
+    </section>
+
+    <footer id="contact">
+        <p>聯繫我們: info@healthyweight.com</p>
+        <p>&copy; 2025 健康減脂網站</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* 基本樣式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 標頭樣式 */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 主要區域 */
+.hero {
+    background-color: #8BC34A;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.cta-button {
+    background-color: #FF9800;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #FF5722;
+}
+
+/* 產品區 */
+#products {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card .buy-button {
+    background-color: #FF5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card .buy-button:hover {
+    background-color: #E64A19;
+}
+
+/* 減肥計劃區 */
+#plans {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#plans button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#plans button:hover {
+    background-color: #388E3C;
+}
+
+/* 博客區 */
+#blog {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#blog a {
+    color: #4CAF50;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
+
+/* 頁腳樣式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+// 範例：控制按鈕點擊事件
+document.querySelector('.cta-button').addEventListener('click', function() {
+    alert('你將被引導到產品頁面！');
+});
